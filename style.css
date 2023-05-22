@@ -1,0 +1,151 @@
+/*
+  Nombre: Camila Carabajal Millanao
+  Rut:20.550.258-0
+  Curso: Front-End
+  Tarea: 2
+*/
+
+/*OBSERVACION1: EL STYLESHEET SE REALIZO A TRAVES DE BEM, PERO EL CONTENIDO DENTRO DE CADA CLASE FUE REUTILIZADO DE LA TAREA 1
+               MODIFICANDO EL TEMA DE LAS POSICIONES DENTRO DE LAS PAGINAS CAMBIANDO EL POSITION A DISPLAY: FLEX*/
+
+
+/*OBSERVACION2: ESTO CORRESPONDE A MEDIAQUERIES Y SER RESPONSIVO, LO QUE SE ENCUENTRA DENTRO DE LOS CORCHETES DEL @MEDIA, ES LO QUE
+               RESPECTA EL BEM Y FLEXBOX, JUNTO CON REUTILIZACION DE MATERIAL DE TAREA 1.*/
+               @media screen and (min-width: 700px) and (min-height: 700px){
+                /*
+                Nombre: header-item
+                Descripción: Corresponde al diseño del encabezado de la pagina
+                Observacion: Es exactamente la misma entrega que en la anterior, pero hubo cambios respecto a que en la primera entrega se utilizo
+                         posicion relativa, y ahora se esta usando flexbox para poder posicionar de manera distinta los detalles del encabezado
+                */
+                
+                .header-item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: rgb(232, 88, 109); 
+                    width: 100%; 
+                    height: 97px;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    
+                
+                }
+                /*
+                Nombre: header-item picture
+                Descripcion: Corresponde al logo del encabezado
+                Observacion: Al igual que en la observacion anterior se cambio la posicion absoluta por flexbox*/
+                .header-item picture{
+                    display: flex;
+                    align-items: flex-end;
+                    width: 140px;
+                    height: 41px;
+                
+                }
+                
+                /*
+                Nombre: header-item ul
+                Descripcion: Corresponde a una lista que indica el contenido del menu
+                Observacion: En la tarea 1 fue simplemente un parrafo, pero ahora se modifico para que fuera una lista con valores, añadiendo tambien
+                             flexbox para modificar la posicion de cada elemento de la lista*/
+                .header-item ul {
+                    display: flex;
+                    padding-right: 2rem;
+                    gap: 2rem;
+                
+                    color: black;
+                    top:23px;
+                    left: 63%;
+                    word-spacing: 1.0em;
+                    font-weight: 700;
+                    font-family: 'Courier New', Courier, monospace; 
+                
+                }
+                 /*
+                Nombre: content-item
+                Descripcion: Corresponde a las posiciones del layout y el como estan distribuidas.
+                */
+                .content-item{
+                    display: grid;
+                    grid-template-rows: auto;
+                    grid-template-columns: auto;
+                }
+                /*
+                Nombre: carousel
+                Descripcion: Corresponde al bootstrap visto dentro de la semana 01 del taller de front-end
+                */
+                .carousel{
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    margin-top: -25px;
+                }
+                
+                /*
+                Nombre: titulo
+                Descripcion: Corresponde al recuadro en donde se debe agregar el titulo y subtitulo*/
+                .titulo{
+                    background-color:rgb(208, 223, 108);
+                    width: 100%;
+                    height: 172px;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                }
+                /*
+                Nombre: titulo h2
+                Descripcion: Corresponde al titulo de la pagina web
+                Observacion: El titulo es copiado de manera textual de la tarea 1 del taller de front-end.
+                             Se agrego flexbox para tarea 2, y quedar centrado como debe ser*/
+                .titulo h2{
+                    display: flex;
+                    justify-content: center;
+                    color: rgb(83, 102, 89);
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 56px;
+                
+                }
+                /*
+                Nombre: titulo p
+                Descripcion: Corresponde al subtitulo de la pagina web
+                Observacion: El subtitulo es copiado de manera textual de la tarea 1 del taller de front-end.
+                             Se agrego flexbox para tarea 2, y quedar centrado como debe ser*/
+                .titulo p{
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    color: rgb(109, 138, 118);
+                    font-size:20px ;
+                    font-family: 'Courier New', Courier, monospace; 
+             
+                }
+                /*
+                Nombre: table
+                Descripcion: Corresponde una tabla en la cual se debe describir en lo que consiste la pagina
+                Observacion: Lo descrito dentro de las tablas es copiado de manera textual de la tarea 1 del taller de front-end.*/
+                .table{
+                    background-color: rgb(126, 185, 96); 
+                    width: 100%;
+                    height: 300px;
+                }
+                /*
+                Nombre: footer-item
+                Descripcion: Corresponde al recuadro del pie de pagina.*/
+                .footer-item{
+                    background-color: rgb(53, 36, 55);
+                    width: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
+                    height: 30px;
+                }
+                /*
+                Nombre: footer-item p
+                Descripcion: Corresponde al texto del pie de pagina
+                Observacion: El texto del pie de pagina es un texto generico*/
+                .footer-item p{
+                    color: rgb(199, 152, 204);
+                    text-align: center;
+                    font-size: 13px;
+                    font-family: 'Courier New', Courier, monospace; 
+                
+                }
+            }
+            
